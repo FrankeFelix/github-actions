@@ -4,7 +4,7 @@
   pre_tasks:
     - name: Set SSH user for Ubuntu
       ansible.builtin.set_fact:
-        ansible_user: ubuntu
+        ansible_user: admin
       when: ansible_os_family == "Debian"
 
   tasks:
